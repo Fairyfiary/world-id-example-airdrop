@@ -15,21 +15,20 @@ contract WorldIDAirdropTest is PRBTest {
     event AmountUpdated(uint256 amount);
     event AirdropClaimed(address receiver);
 
-    address public user;
-    uint256 internal groupId;
-    uint256[8] internal proof;
-    address public manager;
-    TestERC20 internal token;
-    WorldIDIdentityManagerRouterMock internal worldIDIdentityManagerRouterMock;
-    WorldIDAirdrop internal airdrop;
+    address public user;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    uint256 internal groupId;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    uint256[8] internal proof;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    address public manager;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    TestERC20 internal token;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    WorldIDIdentityManagerRouterMock internal worldIDIdentityManagerRouterMock;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+    WorldIDAirdrop internal airdrop;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
 
     function setUp() public {
-        groupId = 1;
-        user = address(0x2);
-        token = new TestERC20();
-        worldIDIdentityManagerRouterMock = new WorldIDIdentityManagerRouterMock();
-
-        manager = address(0x1);
+        groupId = 1;0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+        user = address(0x2);0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+        token = new TestERC20();0xe6e9d68a956e5754fa3031a0dd655bd6c8e7a772
+        worldIDIdentityManagerRouterMock = new WorldIDIdentityManagerRouterMock()
+        manager = address(0x1)
 
         proof = [0, 0, 0, 0, 0, 0, 0, 0];
 
